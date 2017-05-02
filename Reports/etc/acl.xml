@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Magento_Reports::report" title="Reports" translate="title" sortOrder="70">
+                    <resource id="Magento_Reports::report_products" title="Products" translate="title" sortOrder="60">
+                        <resource id="End_Reports::qty" title="Quantity Change" translate="title" sortOrder="60" />
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="End_Reports::report_products_qty" title="Quantity change" translate="title" module="End_Reports" sortOrder="60" parent="Magento_Reports::report_products" action="reports/report_product/qty" resource="End_Reports::qty"/>
+    </menu>
+</config>
