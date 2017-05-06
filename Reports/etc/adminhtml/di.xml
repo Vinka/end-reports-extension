@@ -2,21 +2,6 @@
 
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <preference for="End\Reports\Api\Data\QtyChangeInterface" type="End\Reports\Model\Product\QtyChange" />
-    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
-        <arguments>
-            <argument name="collections" xsi:type="array">
-                <item name="reports_report_product_qty_grid_data_source" xsi:type="string">End\Reports\Model\ResourceModel\Product\QtyChange\Grid\Collection</item>
-            </argument>
-        </arguments>
-    </type>
-    <type name="End\Reports\Model\ResourceModel\Product\QtyChange\Grid\Collection">
-        <arguments>
-            <argument name="mainTable" xsi:type="string">report_product_qty_change</argument>
-            <argument name="eventPrefix" xsi:type="string">end_reports_grid_collection</argument>
-            <argument name="eventObject" xsi:type="string">end_grid_collection</argument>
-            <argument name="resourceModel" xsi:type="string">End\Reports\Model\ResourceModel\Product\QtyChange\Collection</argument>
-        </arguments>
-    </type>
     <type name="Magento\CatalogInventory\Model\Stock\StockItemRepository">
         <plugin name="end_stock_item_repository" type="End\Reports\Plugin\StockItemRepository" sortOrder="10" disabled="false"/>
     </type>
